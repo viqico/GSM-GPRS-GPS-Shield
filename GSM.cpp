@@ -28,7 +28,7 @@ based on QuectelM10 chip.
 #define _GSM_RXPIN_ 3
 
 #ifdef UNO
-GSM::GSM():_cell(_GSM_TXPIN_,_GSM_RXPIN_),_tf(_cell, 10),_status(IDLE)
+GSM::GSM():_cell(_GSM_RXPIN_, _GSM_TXPIN_),_tf(_cell, 10),_status(IDLE)
 {
 };
 #endif
